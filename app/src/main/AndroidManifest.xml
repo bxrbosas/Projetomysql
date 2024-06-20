@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_tarefa"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_tarefa_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Mysql"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".activity.SplashActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ListagemTurmaActivity"
+            android:exported="false"
+            android:label="@string/title_activity_listagem_turma"
+            android:theme="@style/Theme.Mysql" />
+        <activity
+            android:name=".activity.ListagemItemActivity"
+            android:exported="false"
+            android:label="@string/title_activity_listagem_item"
+            android:theme="@style/Theme.Mysql" />
+        <activity
+            android:name=".activity.ItemTurmaActivity"
+            android:exported="false"
+            android:label="@string/title_activity_item_turma"
+            android:theme="@style/Theme.Mysql" />
+        <activity
+            android:name=".ItemTurmaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CadastroTurmaActivity"
+            android:exported="false"
+            android:label="@string/title_activity_cadastro_turma"
+            android:theme="@style/Theme.Mysql" />
+        <activity
+            android:name=".activity.ListagemProfessorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ItemProfessorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CadastroProfessorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CadastroAlunoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ItemAlunoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ListagemAlunoActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
